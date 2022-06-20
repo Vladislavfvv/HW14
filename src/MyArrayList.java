@@ -12,11 +12,14 @@ public class MyArrayList {
 
     public void setMyArrayList(int n) {
         Random random = new Random();
-        this.list = new ArrayList<>(n);
+        //this.list = new ArrayList<>(n);
+        System.out.println("Длина:" + this.list.size());
         for (int i = 0; i < this.list.size(); i++) {
             MyTElement element = new MyTElement(random.nextInt());
             list.add(element);
         }
+        System.out.println("Длина:" + this.list.size());
+
 
 
 //        Random random = new Random();
